@@ -316,8 +316,8 @@ js8_decoding_depth = 3
 
 temporary_directory = "/tmp"
 
-services_enabled = False
-services_decoders = ["ft8", "ft4", "wspr", "packet"]
+services_enabled = True
+services_decoders = ["ft8", "jt65", "wspr", "packet"]
 
 # === aprs igate settings ===
 # if you want to share your APRS decodes with the aprs network, configure these settings accordingly
