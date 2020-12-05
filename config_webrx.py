@@ -334,7 +334,7 @@ aprs_symbols_path = "/usr/share/aprs-symbols/png"
 # === PSK Reporter setting ===
 # enable this if you want to upload all ft8, ft4 etc spots to pskreporter.info
 # this also uses the receiver_gps setting from above, so make sure it contains a correct locator
-pskreporter_enabled = False
+pskreporter_enabled = True
 pskreporter_callsign = CALLSIGN
 
 # === Web admin settings ===
