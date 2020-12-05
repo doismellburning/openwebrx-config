@@ -42,8 +42,11 @@ version = 3
 web_port = 8073
 max_clients = 20
 
+# Base config
+CALLSIGN = "2E0KGG"
+
 # ==== Web GUI configuration ====
-receiver_name = "2E0KGG"
+receiver_name = CALLSIGN
 receiver_location = "Bedfordshire, England"
 receiver_asl = 200
 receiver_admin = "radio@doismellburning.co.uk"
@@ -318,7 +321,7 @@ services_decoders = ["ft8", "ft4", "wspr", "packet"]
 
 # === aprs igate settings ===
 # if you want to share your APRS decodes with the aprs network, configure these settings accordingly
-aprs_callsign = "N0CALL"
+aprs_callsign = CALLSIGN
 aprs_igate_enabled = False
 aprs_igate_server = "euro.aprs2.net"
 aprs_igate_password = ""
@@ -332,7 +335,7 @@ aprs_symbols_path = "/usr/share/aprs-symbols/png"
 # enable this if you want to upload all ft8, ft4 etc spots to pskreporter.info
 # this also uses the receiver_gps setting from above, so make sure it contains a correct locator
 pskreporter_enabled = False
-pskreporter_callsign = "N0CALL"
+pskreporter_callsign = CALLSIGN
 
 # === Web admin settings ===
 # this feature is experimental at the moment. it should not be enabled on shared receivers since it allows remote
