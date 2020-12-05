@@ -43,12 +43,12 @@ web_port = 8073
 max_clients = 20
 
 # ==== Web GUI configuration ====
-receiver_name = "[Callsign]"
-receiver_location = "Budapest, Hungary"
+receiver_name = "2E0KGG"
+receiver_location = "Bedfordshire, England"
 receiver_asl = 200
-receiver_admin = "example@example.com"
-receiver_gps = {"lat": 47.000000, "lon": 19.000000}
-photo_title = "Panorama of Budapest from Schönherz Zoltán Dormitory"
+receiver_admin = "radio@doismellburning.co.uk"
+receiver_gps = {"lat": 52.08652, "lon": -0.26493}
+photo_title = ""
 # photo_desc allows you to put pretty much any HTML you like into the receiver description.
 # The lines below should give you some examples of what's possible.
 photo_desc = """
