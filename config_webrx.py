@@ -201,6 +201,14 @@ sdrs = {
         "ppm": 0,
         "antenna": "Antenna A",
         "profiles": {
+            "10m": {
+                "name": "10m",
+                "center_freq": 28300000,
+                "rf_gain": 0,
+                "samp_rate": 500000,
+                "start_freq": 28140000,
+                "start_mod": "usb",
+            },
             "20m": {
                 "name": "20m",
                 "center_freq": 14150000,
@@ -231,6 +239,14 @@ sdrs = {
                 "rf_gain": 0,
                 "samp_rate": 500000,
                 "start_freq": 3570000,
+                "start_mod": "lsb",
+            },
+            "160m": {
+                "name": "160m",
+                "center_freq": 1825000,
+                "rf_gain": 0,
+                "samp_rate": 500000,
+                "start_freq": 1785000,
                 "start_mod": "lsb",
             },
             "49m": {
