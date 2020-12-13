@@ -258,6 +258,12 @@ sdrs = {
                 "start_mod": "am",
             },
         },
+        "scheduler": {
+            "type": "static",
+            "schedule": {
+                "0000-0000": "40m",
+            },
+        },
     },
 }
 
