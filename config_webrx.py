@@ -125,6 +125,24 @@ Note: if you experience audio underruns while CPU usage is 100%, you can:
 # For more details on specific types, please checkout the wiki:
 # https://github.com/jketterl/openwebrx/wiki/Supported-Hardware#sdr-devices
 
+def _build_schedule():
+    # Produces a schedule dict per https://github.com/jketterl/openwebrx/wiki/Background-decoding#scheduler
+    # rotating through each band within an hour.
+    #
+    # Band selection hardcoded, but hey...
+
+    schedule = {}
+
+    for h in range(0, 23):
+        hour = "%02d" % h
+        schedule["{hour}00-{hour}11".format(hour=hour)] = "10m"
+        schedule["{hour}12-{hour}23".format(hour=hour)] = "20m"
+        schedule["{hour}24-{hour}35".format(hour=hour)] = "40m"
+        schedule["{hour}36-{hour}47".format(hour=hour)] = "80m"
+        schedule["{hour}48-{hour}59".format(hour=hour)] = "160m"
+
+    return schedule
+
 sdrs = {
     "rtlsdr": {
         "name": "RTL-SDR USB Stick",
@@ -260,9 +278,7 @@ sdrs = {
         },
         "scheduler": {
             "type": "static",
-            "schedule": {
-                "0000-0000": "40m",
-            },
+            "schedule": _build_schedule(),
         },
     },
 }
