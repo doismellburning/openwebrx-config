@@ -1,0 +1,338 @@
+{
+    "version": 7,
+    "squelch_auto_margin": 10,
+    "waterfall_auto_min_range": 50,
+    "aprs_callsign": "2E0KGG",
+    "aprs_igate_password": "",
+    "fft_fps": 9,
+    "aprs_igate_comment": "OpenWebRX APRS gateway",
+    "waterfall_auto_levels": {
+        "min": 3,
+        "max": 10
+    },
+    "pskreporter_enabled": true,
+    "fft_size": 4096,
+    "tuning_precision": 2,
+    "audio_compression": "adpcm",
+    "receiver_asl": 200,
+    "aprs_igate_symbol": "R&",
+    "digital_voice_unvoiced_quality": 1,
+    "map_position_retention_time": 7200,
+    "digimodes_enable": true,
+    "receiver_location": "Bedfordshire, England",
+    "digimodes_fft_size": 2048,
+    "google_maps_api_key": "",
+    "sdrs": {
+        "rtlsdr": {
+            "name": "RTL-SDR USB Stick",
+            "type": "rtl_sdr",
+            "ppm": 0,
+            "profiles": {
+                "70cm": {
+                    "name": "70cm Relais",
+                    "center_freq": 438800000,
+                    "rf_gain": 29,
+                    "samp_rate": 2400000,
+                    "start_freq": 439275000,
+                    "start_mod": "nfm"
+                },
+                "2m": {
+                    "name": "2m komplett",
+                    "center_freq": 145000000,
+                    "rf_gain": 29,
+                    "samp_rate": 2048000,
+                    "start_freq": 145725000,
+                    "start_mod": "nfm"
+                }
+            }
+        },
+        "airspy": {
+            "name": "Airspy HF+",
+            "type": "airspyhf",
+            "ppm": 0,
+            "rf_gain": "auto",
+            "profiles": {
+                "20m": {
+                    "name": "20m",
+                    "center_freq": 14150000,
+                    "samp_rate": 384000,
+                    "start_freq": 14070000,
+                    "start_mod": "usb"
+                },
+                "30m": {
+                    "name": "30m",
+                    "center_freq": 10125000,
+                    "samp_rate": 192000,
+                    "start_freq": 10142000,
+                    "start_mod": "usb"
+                },
+                "40m": {
+                    "name": "40m",
+                    "center_freq": 7100000,
+                    "samp_rate": 256000,
+                    "start_freq": 7070000,
+                    "start_mod": "lsb"
+                },
+                "80m": {
+                    "name": "80m",
+                    "center_freq": 3650000,
+                    "samp_rate": 384000,
+                    "start_freq": 3570000,
+                    "start_mod": "lsb"
+                },
+                "49m": {
+                    "name": "49m Broadcast",
+                    "center_freq": 6050000,
+                    "samp_rate": 384000,
+                    "start_freq": 6070000,
+                    "start_mod": "am"
+                }
+            }
+        },
+        "sdrplay": {
+            "name": "SDRPlay RSP2",
+            "type": "sdrplay",
+            "ppm": 0,
+            "antenna": "Antenna A",
+            "profiles": {
+                "10m": {
+                    "name": "10m",
+                    "center_freq": 28300000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 28140000,
+                    "start_mod": "usb"
+                },
+                "20m": {
+                    "name": "20m",
+                    "center_freq": 14150000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 14070000,
+                    "start_mod": "usb"
+                },
+                "30m": {
+                    "name": "30m",
+                    "center_freq": 10125000,
+                    "rf_gain": 0,
+                    "samp_rate": 250000,
+                    "start_freq": 10142000,
+                    "start_mod": "usb"
+                },
+                "40m": {
+                    "name": "40m",
+                    "center_freq": 7100000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 7070000,
+                    "start_mod": "lsb"
+                },
+                "80m": {
+                    "name": "80m",
+                    "center_freq": 3650000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 3570000,
+                    "start_mod": "lsb"
+                },
+                "160m": {
+                    "name": "160m",
+                    "center_freq": 1825000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 1785000,
+                    "start_mod": "lsb"
+                },
+                "49m": {
+                    "name": "49m Broadcast",
+                    "center_freq": 6000000,
+                    "rf_gain": 0,
+                    "samp_rate": 500000,
+                    "start_freq": 6070000,
+                    "start_mod": "am"
+                }
+            },
+            "scheduler": {
+                "type": "static",
+                "schedule": {
+                    "0000-0011": "10m",
+                    "0012-0023": "20m",
+                    "0024-0035": "40m",
+                    "0036-0047": "80m",
+                    "0048-0059": "160m",
+                    "0100-0111": "10m",
+                    "0112-0123": "20m",
+                    "0124-0135": "40m",
+                    "0136-0147": "80m",
+                    "0148-0159": "160m",
+                    "0200-0211": "10m",
+                    "0212-0223": "20m",
+                    "0224-0235": "40m",
+                    "0236-0247": "80m",
+                    "0248-0259": "160m",
+                    "0300-0311": "10m",
+                    "0312-0323": "20m",
+                    "0324-0335": "40m",
+                    "0336-0347": "80m",
+                    "0348-0359": "160m",
+                    "0400-0411": "10m",
+                    "0412-0423": "20m",
+                    "0424-0435": "40m",
+                    "0436-0447": "80m",
+                    "0448-0459": "160m",
+                    "0500-0511": "10m",
+                    "0512-0523": "20m",
+                    "0524-0535": "40m",
+                    "0536-0547": "80m",
+                    "0548-0559": "160m",
+                    "0600-0611": "10m",
+                    "0612-0623": "20m",
+                    "0624-0635": "40m",
+                    "0636-0647": "80m",
+                    "0648-0659": "160m",
+                    "0700-0711": "10m",
+                    "0712-0723": "20m",
+                    "0724-0735": "40m",
+                    "0736-0747": "80m",
+                    "0748-0759": "160m",
+                    "0800-0811": "10m",
+                    "0812-0823": "20m",
+                    "0824-0835": "40m",
+                    "0836-0847": "80m",
+                    "0848-0859": "160m",
+                    "0900-0911": "10m",
+                    "0912-0923": "20m",
+                    "0924-0935": "40m",
+                    "0936-0947": "80m",
+                    "0948-0959": "160m",
+                    "1000-1011": "10m",
+                    "1012-1023": "20m",
+                    "1024-1035": "40m",
+                    "1036-1047": "80m",
+                    "1048-1059": "160m",
+                    "1100-1111": "10m",
+                    "1112-1123": "20m",
+                    "1124-1135": "40m",
+                    "1136-1147": "80m",
+                    "1148-1159": "160m",
+                    "1200-1211": "10m",
+                    "1212-1223": "20m",
+                    "1224-1235": "40m",
+                    "1236-1247": "80m",
+                    "1248-1259": "160m",
+                    "1300-1311": "10m",
+                    "1312-1323": "20m",
+                    "1324-1335": "40m",
+                    "1336-1347": "80m",
+                    "1348-1359": "160m",
+                    "1400-1411": "10m",
+                    "1412-1423": "20m",
+                    "1424-1435": "40m",
+                    "1436-1447": "80m",
+                    "1448-1459": "160m",
+                    "1500-1511": "10m",
+                    "1512-1523": "20m",
+                    "1524-1535": "40m",
+                    "1536-1547": "80m",
+                    "1548-1559": "160m",
+                    "1600-1611": "10m",
+                    "1612-1623": "20m",
+                    "1624-1635": "40m",
+                    "1636-1647": "80m",
+                    "1648-1659": "160m",
+                    "1700-1711": "10m",
+                    "1712-1723": "20m",
+                    "1724-1735": "40m",
+                    "1736-1747": "80m",
+                    "1748-1759": "160m",
+                    "1800-1811": "10m",
+                    "1812-1823": "20m",
+                    "1824-1835": "40m",
+                    "1836-1847": "80m",
+                    "1848-1859": "160m",
+                    "1900-1911": "10m",
+                    "1912-1923": "20m",
+                    "1924-1935": "40m",
+                    "1936-1947": "80m",
+                    "1948-1959": "160m",
+                    "2000-2011": "10m",
+                    "2012-2023": "20m",
+                    "2024-2035": "40m",
+                    "2036-2047": "80m",
+                    "2048-2059": "160m",
+                    "2100-2111": "10m",
+                    "2112-2123": "20m",
+                    "2124-2135": "40m",
+                    "2136-2147": "80m",
+                    "2148-2159": "160m",
+                    "2200-2211": "10m",
+                    "2212-2223": "20m",
+                    "2224-2235": "40m",
+                    "2236-2247": "80m",
+                    "2248-2259": "160m"
+                }
+            }
+        }
+    },
+    "wsjt_decoding_depths": {
+        "jt65": 1
+    },
+    "nmux_memory": 50,
+    "q65_enabled_combinations": [
+        "A30",
+        "E120",
+        "C60"
+    ],
+    "services_decoders": [
+        "ft8",
+        "jt65",
+        "wspr",
+        "packet"
+    ],
+    "aprs_igate_enabled": false,
+    "wsprnet_enabled": false,
+    "aprs_igate_beacon": false,
+    "photo_desc": "\nYou can add your own background photo and receiver information.<br />\nReceiver is operated by: <a href=\"mailto:openwebrx@localhost\" target=\"_blank\">Receiver Operator</a><br/>\nDevice: Receiver Device<br />\nAntenna: Receiver Antenna<br />\nWebsite: <a href=\"http://localhost\" target=\"_blank\">http://localhost</a>\n",
+    "services_enabled": true,
+    "decoding_queue_workers": 2,
+    "fft_voverlap_factor": 0.3,
+    "wsjt_decoding_depth": 3,
+    "js8_enabled_profiles": [
+        "normal",
+        "slow"
+    ],
+    "csdr_through": false,
+    "CALLSIGN": "2E0KGG",
+    "aprs_igate_server": "euro.aprs2.net",
+    "waterfall_scheme": "GoogleTurboWaterfall",
+    "receiver_admin": "radio@doismellburning.co.uk",
+    "js8_decoding_depth": 3,
+    "photo_title": "",
+    "pskreporter_callsign": "2E0KGG",
+    "wsprnet_callsign": "N0CALL",
+    "fst4w_enabled_intervals": [
+        120,
+        300
+    ],
+    "receiver_gps": {
+        "lat": 52.08652,
+        "lon": -0.26493
+    },
+    "wfm_deemphasis_tau": 5e-05,
+    "receiver_keys": [],
+    "receiver_name": "2E0KGG",
+    "digital_voice_dmr_id_lookup": true,
+    "decoding_queue_length": 10,
+    "waterfall_levels": {
+        "min": -88,
+        "max": -20
+    },
+    "csdr_print_bufsizes": false,
+    "max_clients": 20,
+    "csdr_dynamic_bufsize": false,
+    "fft_compression": "adpcm",
+    "fst4_enabled_intervals": [
+        15,
+        30
+    ]
+}
