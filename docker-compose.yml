@@ -8,4 +8,4 @@ services:
     ports:
       - "8073:8073"
     volumes:
-      - ".:/etc/openwebrx"  # Only need config file, but let's just map everything
+      - "./settings.json:/var/lib/openwebrx/settings.json:ro"
